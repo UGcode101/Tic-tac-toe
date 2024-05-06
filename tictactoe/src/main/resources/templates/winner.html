@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <title>Tic Tac Toe - Winner</title>
+</head>
+<body>
+<h1>Winner!</h1>
+<h2 th:text="'The winner is ' + ${winner}"></h2>
+<a href="/tictactoe/new?gameId=game1">Play Again</a>
+</body>
+</html>
