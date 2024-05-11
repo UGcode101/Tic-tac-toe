@@ -58,6 +58,10 @@ public class Game {
         return null;
     }
 
+    public boolean isDraw() {
+        return isBoardFull() && winner == null; // A draw occurs if the board is full and there is no winner
+    }
+
     public boolean isGameOver() {
         return winner != null || isBoardFull();
     }

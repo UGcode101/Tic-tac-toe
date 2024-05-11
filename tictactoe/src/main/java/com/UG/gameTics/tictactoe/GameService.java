@@ -28,6 +28,11 @@ public class GameService {
         return game != null ? game.getWinner() : null;
     }
 
+    public boolean isDraw(String gameId) {
+        Game game = games.get(gameId);
+        return game != null && game.isDraw(); // Checks if the specified game is a draw
+    }
+
     public boolean isGameOver(String gameId) {
         Game game = games.get(gameId);
         return game != null && game.isGameOver();
